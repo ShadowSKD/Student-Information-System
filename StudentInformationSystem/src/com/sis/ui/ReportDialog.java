@@ -33,11 +33,11 @@ public class ReportDialog extends JDialog {
         sb.append("----------------------------------------\n");
         sb.append("         ACADEMIC PERFORMANCE\n");
         sb.append("----------------------------------------\n\n");
-        sb.append(String.format("Cumulative GPA: %.2f\n\n", student.getGpa()));
+        sb.append(String.format("Cumulative CGPA: %.2f\n\n", student.getGpa()));
         sb.append("Academic Standing: ");
-        if (student.getGpa() >= 3.5) {
+        if (student.getGpa() >= 8.5) {
             sb.append("Good Standing (Dean's List)\n");
-        } else if (student.getGpa() >= 2.0) {
+        } else if (student.getGpa() >= 6.5) {
             sb.append("Good Standing\n");
         } else {
             sb.append("Academic Probation\n");

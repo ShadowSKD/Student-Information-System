@@ -45,7 +45,7 @@ public class MainFrame extends JFrame {
 
 
         // --- Table ---
-        String[] columnNames = {"ID", "Name", "Major", "GPA"};
+        String[] columnNames = {"ID", "Name", "Major", "CGPA"};
         tableModel = new DefaultTableModel(columnNames, 0) {
              @Override
             public boolean isCellEditable(int row, int column) {

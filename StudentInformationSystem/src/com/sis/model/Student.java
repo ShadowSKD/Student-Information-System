@@ -58,7 +58,7 @@ public class Student {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", major='" + major + '\'' +
-                ", gpa=" + gpa +
+                ", cgpa=" + gpa +
                 '}';
     }
 }

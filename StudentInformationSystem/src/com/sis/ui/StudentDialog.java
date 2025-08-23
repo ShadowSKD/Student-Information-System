@@ -62,7 +62,7 @@ public class StudentDialog extends JDialog {
         cs.gridx = 0;
         cs.gridy = 2;
         cs.gridwidth = 1;
-        panel.add(new JLabel("GPA:"), cs);
+        panel.add(new JLabel("CGPA:"), cs);
 
         cs.gridx = 1;
         cs.gridy = 2;
@@ -128,12 +128,12 @@ public class StudentDialog extends JDialog {
         // GPA validation
         try {
             double gpa = Double.parseDouble(gpaField.getText());
-            if (gpa < 0.0 || gpa > 4.0) {
-                JOptionPane.showMessageDialog(this, "GPA must be between 0.0 and 4.0.", "Input Error", JOptionPane.ERROR_MESSAGE);
+            if (gpa < 0.0 || gpa > 10.0) {
+                JOptionPane.showMessageDialog(this, "CGPA must be between 0.0 and 10.0.", "Input Error", JOptionPane.ERROR_MESSAGE);
                 return false;
             }
         } catch (NumberFormatException e) {
-            JOptionPane.showMessageDialog(this, "Invalid GPA. Please enter a number.", "Input Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "Invalid CGPA. Please enter a number.", "Input Error", JOptionPane.ERROR_MESSAGE);
             return false;
         }
         return true;

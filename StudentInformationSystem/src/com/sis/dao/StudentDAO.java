@@ -17,11 +17,7 @@ public class StudentDAO {
 
     public StudentDAO() {
         studentList = new ArrayList<>();
-        // Add some dummy data for demonstration purposes
-        addStudent(new Student(0, "Alice Johnson", "Computer Science", 3.8));
-        addStudent(new Student(0, "Bob Williams", "Physics", 3.5));
-        addStudent(new Student(0, "Charlie Brown", "Mathematics", 3.9));
-        addStudent(new Student(0, "Diana Miller", "Biology", 3.2));
+        
     }
 
     /**
